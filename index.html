@@ -65,7 +65,7 @@
           <li><a class="nav-link active" href="#header">Inicio</a></li>
           <li><a class="nav-link" href="#about">Acerca de mi</a></li>
           <!--li><a class="nav-link" href="#resume">Historia</a></li-->
-          <li><a class="nav-link" href="#services">Propuestas de Campaña</a></li>
+          <li><a class="nav-link" href="#servicess">Propuestas de Campaña</a></li>
           <li><a class="nav-link" href="#portfolio">Fotografía</a></li>
           <li><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
@@ -358,158 +358,154 @@
 
     </div>
   </section><!-- End Resume Section -->
+<style>
+  #services *{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
 
+}
+
+  .container2
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container2 .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container2 .card:hover
+{
+    height: 420px;
+}
+.container2 .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 270px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.container2 .card .imgBx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.container2 .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container2 .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -75px;
+    transition-delay: 0.3s;
+}
+</style>
   <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
+  
+  <section id="servicess" class="servicess" style="
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);  margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;">
+    <!--tarjetas version hover jesus alfredo valdes reyes-->
+   
+      <div class="container2">
+        
+        <div class="card">
+            <div class="imgBx">
+                <img src="assets/img/hos.png" alt="" class="img1">
+            </div>
+            <div class="content">
+                <p>Que el hospital de Acahualco sea una realidad.</p> <hr style="color: blue;">
+                <p></p>
+            </div>
+        </div>
+          <!--espacio en blanco-->
 
-      <div class="section-title">
-        <h2>PROPUESTAS DE CAMPAÑA</h2>
-        <p>Mis propuestas</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="la:hospital-solid" data-inline="false" style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu" onclick="hizoClick()">Que el hospital de Acahualco sea una realidad.
-              <br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-              </svg>
-            </a></h4>
-            <script>
-               function hizoClick() {
-               alert("Realización e implementación de las gestiones necesarias para que el Hospital de Acahualco, sea una realidad.");
-              }
-            </script>
-            <!--p>De que trata en resumen (leer más)</p-->
-          </div>
-        </div>
-        <!--mensaje de alerta-->
-        <div class="overlay" id="overlay">
-          <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <h3>Salud.</h3>
-            <h4>Realización e implementación de las gestiones necesarias para que el Hospital de Acahualco, sea una realidad.</h4>
-            
-          </div>
-        </div>
-        <!--fin-->
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="emojione-monotone:oncoming-police-car" data-inline="false"style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu"  onclick="hizoClick()">Por tu seguridad, más policías mejor pagados.<br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-            </svg></a></h4>
-            <!--p>De que trata en resumen (leer más)</p-->
-            <script>
-              function hizoClick() {
-                alert("Se fortalecerá a la policía, mejorando los sueldos de la Policía, incrementando el número de elementos  además de la implementación y buen funcionamiento de una red de videovigilancia.");
-              }
-              </script>
-          </div>
-        </div>
-        <div class="overlay" id="overlay">
-          <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popu" class="btn-cerrar-popu" ><i class="fas fa-times"></i></a>
-            <h3>Seguridad.</h3>
-            <h4>Se fortalecerá a la policía, mejorando los sueldos de la Policía, incrementando el número de elementos  además de la implementación y buen funcionamiento de una red de videovigilancia.</h4>
-            
-          </div>
-        </div>
-
- 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="bi-trash" data-inline="false"style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu"  onclick="basura()">La basura fuera de tu casa, más unidades de recolección.
-              <br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-            </svg></a></h4>
-            <script>
-              function basura() {
-                alert("Mejora en programación de rutas y horarios, así como incrementar número de unidades. Que los servicios públicos de Zinacantepec, estén a la altura que merece la ciudadanía.");
-              }
-              </script>
-            <!--p>De que trata en resumen (leer más)</p-->
-          </div>
+          <div class="card">
+            <div class="imgBx">
+                <img src="assets/img/calles.png" alt="" class="img1">
+            </div>
+            <div class="content">
+                <p>CALLES MEJOR PAVIMENTADAS.</p> <hr style="color: blue;">
+                <p style="text-align: justify;">Rehabilitación y construcción de nuevas calles de calidad y duraderas para mejorar 
+                  la movilidad y comunicación en las Delegaciones del municipio.</p>
+            </div>
         </div>
 
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-9"></div>
-       <div></div><div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
 
 
-          
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="fluent-people-audience-20-regular" data-inline="false"style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu"  onclick="juntos()">Juntos podemos, más y 
-              mejores empleos.<br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-              </svg></a></h4>
-              <script>
-              function juntos() {
-                alert("Generación de programas y políticas públicas que impulsen la atención, desarrollo integral y  una mejor calidad de vida para las niñas, niños, jóvenes y Adultos Mayores de Zinacantepec.  ");
-              }
-              </script>
-            <!--p>De que trata en resumen (leer más)</p-->
-          </div>
+
+
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="assets/img/police.png" alt="" class="img1">
+            </div>
+            <div class="content">
+                <p>POR TU SEGURIDAD, MÁS POLICIAS MEJOR PAGADOS.</p> <hr style="color: blue;">
+                <p style="text-align: justify;">Se fortalecerá a la policía, mejorando los sueldos de la Policía, 
+                  incrementando el número de elementos  además de la implementación y buen 
+                  funcionamiento de una red de videovigilancia.</p>
+            </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="et:streetsign" data-inline="false"style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu"  onclick="calles()">Calles mejor pavimentadas.
-              <br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-            </svg></a></h4>
-            <script>
-              function calles() {
-                alert("Rehabilitación y construcción de nuevas calles de calidad y duraderas para mejorar la movilidad y comunicación en las Delegaciones del municipio.");
-              }
-              </script>
-            <!--p>De que trata en resumen (leer más)</p-->
+        <div class="card">
+          <div class="imgBx">
+              <img src="assets/img/juntos.jpg" alt="" class="img1">
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><span class="iconify" data-icon="ic:baseline-published-with-changes" data-inline="false"style="color: green; width: 100%; height: 100%;"></span></div>
-            <h4><a href="#" id="btn-abrir-popu" class="btn-abrir-popu"  onclick="cambio()">El cambio que merecemos
-              <br><i><p>leer más</p></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
-                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-              </svg>
-            </a></h4>
-            <script>
-              function cambio() {
-                alert("");
-              }
-              </script>
-            <!--p>De que trata en resumen (leer más)</p-->
+          <div class="content">
+              <p>JUNTOS PODEMOS, MÁS Y MEJORES EMPLEOS.</p> <hr style="color: blue;">
+              <p style="text-align: justify;">Generación de programas y políticas públicas que impulsen la atención, 
+                desarrollo integral y  una mejor calidad de vida para las niñas, niños, jóvenes y Adultos Mayores de 
+                Zinacantepec.  </p>
           </div>
-        </div>
-        <!--div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Propuesta 7</a></h4>
-            <p>De que trata en resumen (leer más)</p>
-          </div>
-        </div-->
       </div>
 
+        <div class="card">
+            <div class="imgBx">
+                <img src="assets/img/basura.jpg" alt="" class="img1">
+            </div>
+            <div class="content">
+                <p> LA BASURA FURA DE TU CASA, MÁS UNIDADES DE RECOLECCIÓN. </p>
+              <hr style="color: blue;">
+                <p style="text-align: justify; size: 1%;">Mejora en programación de rutas y horarios, así como incrementar número de unidades. 
+                  Que los servicios públicos de Zinacantepec, estén a la altura que merece la ciudadanía.</p>
+            </div>
+        </div>
+
+<!--fin de las tarjetas-->
     </div>
   </section><!-- End Services Section -->
 
